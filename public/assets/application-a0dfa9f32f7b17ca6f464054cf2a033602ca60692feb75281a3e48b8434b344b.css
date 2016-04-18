@@ -1,0 +1,156 @@
+/* line 10, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+.notice, .alert {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+/* line 23, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  color: #424652;
+}
+
+/* line 27, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+h1 {
+  font-size: 2.5rem;
+}
+
+/* line 31, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+h2 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+/* line 36, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+h3 {
+  font-size: 1.75rem;
+}
+
+/* line 40, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+h4 {
+  font-size: 1.375rem;
+}
+
+/* line 44, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+h5 {
+  font-size: 1.25rem;
+}
+
+/* line 48, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+h6 {
+  font-size: 1rem;
+}
+
+/* line 52, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+/* line 57, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+p, ul, ol {
+  margin: 0 0 1.6em 0;
+}
+
+/* line 61, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_navigation {
+  padding: 2.5em 5%;
+  border-bottom: 1px solid #E9E9E9;
+}
+/* line 65, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_navigation label span {
+  font-weight: 500;
+  font-size: .8em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border: 2px solid #E9E9E9;
+  padding: 1rem;
+  color: #454652;
+  float: left;
+}
+/* line 76, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_navigation nav {
+  /*Hide checkbox*/
+}
+/* line 78, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_navigation nav input[type=checkbox] {
+  display: none;
+}
+/* line 81, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_navigation nav ul {
+  overflow: hidden;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+}
+/* line 86, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_navigation nav ul a {
+  text-decoration: none;
+  color: #424652;
+}
+/* line 89, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_navigation nav ul a li {
+  list-style: none;
+  display: inline-block;
+  padding: 1.25rem;
+}
+/* line 93, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_navigation nav ul a li:hover {
+  color: #8bc6db;
+}
+
+/* line 102, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_footer {
+  padding: 2.5em 5%;
+  border-top: 1px solid #E9E9E9;
+}
+/* line 105, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_footer .copyright {
+  float: left;
+  font-size: .9em;
+  margin: 0;
+}
+/* line 110, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_footer nav {
+  float: right;
+}
+/* line 112, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_footer nav i {
+  color: #424652;
+  margin-left: 1em;
+  padding-top: .2em;
+}
+/* line 116, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+#main_footer nav i:hover {
+  color: #8bc6db;
+}
+
+@media screen and (max-width: 800px) {
+  /* line 124, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+  #main_navigation {
+    display: flex;
+    align-items: center;
+  }
+  /* line 128, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+  #main_navigation nav input[type=checkbox]:checked ~ .mobile_menu {
+    display: block;
+  }
+  /* line 132, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+  #main_navigation nav ul {
+    position: static;
+    float: none;
+    display: none;
+  }
+  /* line 137, C:/Users/antos_000/Sites/whale_app/app/assets/stylesheets/application.css.scss */
+  #main_navigation nav ul .mobile_menu li {
+    width: 100%;
+  }
+}

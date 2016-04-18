@@ -1,0 +1,51 @@
+.avatar{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 5em 0;
+}
+
+.title{
+        display: block;
+    
+        hr{
+        width: 30%;
+        margin: 1em 35%;
+    }
+    h2{
+        text-align: center;
+    }
+}
+
+.text{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    
+    p{
+      text-align: center;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .text{
+        text-align: justify;
+        margin: 1em 1em;
+        p{
+            width: 100%
+        }
+    }
+    
+    .title{
+            
+    hr{
+        widht: 100%;
+    }
+    }
+
+}

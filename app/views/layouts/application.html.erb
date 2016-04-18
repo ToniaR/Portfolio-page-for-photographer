@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Animated Responsive Image Grid - Cycling through a set of images in a responsive grid." />
+    <title>Blue Whale</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+            <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+    <!-- Latest compiled and minified CSS -->
+
+		<script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/fallback.css" />
+		</noscript>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+
+    <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    </head>
+    <body>
+
+<header id="main_navigation" class="clearfix">
+        <label for="show-menu">
+           <span class="name">BLUE WHALE</span>
+        </label>
+     
+        
+  <nav>
+      <input type="checkbox" id="show-menu">
+      <ul class="mobile_menu">
+        <li class="menu_link"><%= link_to "Home", root_path  %></li>  
+        <li class="menu_link"><%= link_to "Portfolio", :controller => "projects", :action => "show" %></li>
+          <li class="menu_link"><%= link_to "O nas", :controller => "abouts", :action => "show" %></li>
+          <li class="menu_link"><%= link_to "Kontakt", :controller => "contacts", :action => "index" %></li>
+      </ul>
+  </nav>
+</header>
+            
+  
+
+        
+        
+        
+        
+        <% if notice %>
+            <p class="notice"><%= notice %></p>
+        <% elsif alert %>
+            <p class="alert"><%= alert %></p>
+        <% end %>
+        
+        <%= yield %>
+        
+
+                <footer id="main_footer">
+            <p class="copyright">&copy;2015 Blue Whale</p>
+            <nav>
+                <a href="https://twitter.com/" target="_self"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_self"><i class="fa fa-facebook"></i></a>
+                <a href="https://new.vk.com/club60541269" target="_self"><i class="fa fa-vk"></i></a>
+            </nav>
+        </footer>
+        
+    </body>
+    
+</html>

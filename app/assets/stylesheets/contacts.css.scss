@@ -1,0 +1,87 @@
+.title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+iframe{
+    width: 100%;
+}
+
+.main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0em;
+    .info_container{
+        text-align: center;
+        padding: 0 5% 0 2.5%;
+//        hr{
+//            width: 25em;
+//        }
+        p{
+            text-align: justify;
+        }
+    }
+}
+
+.contact_form{
+
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input, textarea{
+            width: 30%;
+            margin-bottom: 1em;
+            padding: .5em .5em;
+            border-radius: .3em;
+            border-color: $border;
+        }
+        input{
+            height: 2em;
+        }
+        textarea{
+            height: 9em;
+        }
+    }
+    
+    .form_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            width: 30%;
+            height: 3em;
+            margin-bottom: 2em;
+            font-size: 1em;
+            text-transform: uppercase;
+            color: $dark;
+            background-color: $border;
+            &:hover{
+                color: $white;
+                background-color: highlight;
+            }
+        }        
+    }
+}
+
+
+@media screen and (max-width: 800px){
+        
+    
+    .contact_form{
+        .form{      
+               input, textarea{
+                    width: 90%;
+                }
+        }
+    
+    .form_button{
+        button{
+            width: 90%;
+        }
+    }
+    }
+    
+}

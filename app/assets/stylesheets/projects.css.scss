@@ -1,0 +1,32 @@
+.image_container{
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+    div{
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+        width: 200px;
+        .img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+//
+//#main_footer {
+//    border-top: none;
+//}
+
+@media screen and (max-width: 800px){
+    header{
+        padding: 0;
+        div{
+            margin: 0;
+        }
+    }
+}

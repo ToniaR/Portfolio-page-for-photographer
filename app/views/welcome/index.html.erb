@@ -1,0 +1,32 @@
+<div class="section-shadow"></div>
+<section class="h">       
+        <h1>
+            <span>Photography is our passion</span>
+            <div align="center">
+                <hr width="10%">
+            </div>
+            <button><%= link_to 'See our portfolio', :controller => "projects", :action => "show" %></button>    
+            <button><%= link_to 'Contact Us', :controller => "contacts", :action => "index" %></button>    
+        </h1>        
+</section> 
+
+
+
+
+<article>
+
+</article>
+<div class="new_article">
+    
+          
+<% @posts.each do |post| %>
+     
+    <article>
+        <%= image_tag post.image.url(:medium) %>
+        <h3><%= link_to post.title, post, class: "title_link" %></h3>
+         
+        <p><%= link_to  post.content, post, class: "content_link" %></p>
+        <p class="date"><%= post.created_at.strftime("%A, %b, %d") %></p>
+    </article>
+<% end %>
+</div>
